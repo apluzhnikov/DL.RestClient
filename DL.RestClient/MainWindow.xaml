@@ -1,0 +1,38 @@
+﻿<Window x:Class="DL.RestClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DL.RestClient"
+        mc:Ignorable="d"
+        Title="DL.RestClient" Height="500" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox Name="shopsCbx" 
+                      ItemsSource="{Binding Shops}"
+                      DisplayMemberPath="Name"
+                      SelectedValuePath="Name"
+                      SelectedValue="{Binding Path=IShop}"
+                      Grid.Column="0"
+                      >
+                <ComboBox.ItemContainerStyle>
+                    <Style>
+                        <EventSetter Event="ComboBoxItem.PreviewMouseDown" Handler="shopsCbx_Selected"/>
+                    </Style>
+                </ComboBox.ItemContainerStyle>
+            </ComboBox>
+            <Button Name="runQueryBtn" Content="Run request" Click="runQueryBtn_Click"  IsEnabled="False" Grid.Column="1"/>
+        </Grid>
+        <StackPanel Name="shopPanel" Grid.Row="1">
+            <Label Content="Please select the shop from dropdown menu" Foreground="Red"/>
+        </StackPanel>
+    </Grid>
+</Window>

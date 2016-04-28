@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL.RestClient", "DL.RestClient\DL.RestClient.csproj", "{CE0E4E1F-9FA0-4419-8E64-25DBEF64BDB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL.RestLibrary", "DL.RestLibrary\DL.RestLibrary.csproj", "{85895706-ABC9-4719-9B2E-4B6964B41B67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL.Magento2Rest", "DL.Magento2Rest\DL.Magento2Rest.csproj", "{CABEA023-8630-41D7-9904-2F2D43460BED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE0E4E1F-9FA0-4419-8E64-25DBEF64BDB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE0E4E1F-9FA0-4419-8E64-25DBEF64BDB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE0E4E1F-9FA0-4419-8E64-25DBEF64BDB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE0E4E1F-9FA0-4419-8E64-25DBEF64BDB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85895706-ABC9-4719-9B2E-4B6964B41B67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85895706-ABC9-4719-9B2E-4B6964B41B67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85895706-ABC9-4719-9B2E-4B6964B41B67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85895706-ABC9-4719-9B2E-4B6964B41B67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CABEA023-8630-41D7-9904-2F2D43460BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABEA023-8630-41D7-9904-2F2D43460BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CABEA023-8630-41D7-9904-2F2D43460BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABEA023-8630-41D7-9904-2F2D43460BED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
